@@ -1,8 +1,8 @@
 // let n1 = Number(prompt("Digite o primeiro numero"))
 // let n2 = Number(prompt("Digite o segundo numero"))
 
-// function somar(n1, n2){
-//     console.log(n1+n2)
+// function subtraiNumeros(n1, n2){
+//     console.log(n1-n2)
 // }
 
 function olaMundo(){
@@ -15,15 +15,15 @@ function mostraNome(){
 }
 
 function concatenaPalavras(){
-    let fstword = prompt("Digite o primeiro numero")
-    let secword = prompt("Digite o segundo numero")
+    let fstword = prompt("Digite a primeira palavra")
+    let secword = prompt("Digite a segunda palavra")
     let concatenacao = fstword + secword
     console.log(concatenacao)
 }
 
 function somaNumeros(){
-    let n1 = Number(prompt("Digite a primeira palavra"))
-    let n2 = Number(prompt("Digite a segunda palavra"))
+    let n1 = Number(prompt("Digite o primeiro numero"))
+    let n2 = Number(prompt("Digite o segundo numero"))
     let soma = n1 + n2
     console.log(soma)
 }
@@ -79,17 +79,29 @@ function mudarConstante(){
 }
 
 function manipulaArrays(){
-    let n = ["branco", "azul", "vermelho", "verde", "preto", "amarelo", "marrom", "violeta", "rosa", "ciano", "magenta", "cinza"]
-    // n.splice(1,1)
-    // n.sort()
-    console.log(n)
-    // n.unshift() adiciona um elemento ao vetor
-    // n.shift() retira o primeiro elemento do vetor
-    // .sort() organiza array em ordem alfabetica
-    // splice(posicao, qtd que tira) remove ou adiciona algo do vetor
+    let cores = ["branco", "azul", "vermelho", "verde", "preto", "amarelo", "marrom", "violeta", "rosa", "ciano", "magenta", "cinza"]
+    cores.push("Laranja")
+    console.log(cores)
+    cores.pop()
+    console.log(cores)
+    cores.sort()
+    console.log(cores)
+    cores.splice(1,1)
+    console.log(cores)
+    let Primeiroarray = cores[0];
+    let Segundoarray = cores[cores.length-1];
+    console.log(`Primeiro elemento do array: ${Primeiroarray}, último numero do array: ${Segundoarray}`);
+    cores.unshift("fucsia")
+    console.log(cores)
+    cores.shift()
+    console.log(cores)
+    // cores.splice(1,1)
+    // cores.sort()
+    // cores.unshift() adiciona um elemento ao vetor
+    // cores.shift() retira o primeiro elemento do vetor
+    // cores.sort() organiza array em ordem alfabetica
+    // cores.splice(posicao, qtd que tira) remove ou adiciona algo do vetor
+    
+    
 
-    let n2 = [1,5,2,78,3,4,6,23]
-    n2.sort((a,b) => a-b)
-
-    console.log(n2)
 }
