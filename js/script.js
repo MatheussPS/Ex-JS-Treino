@@ -5,6 +5,29 @@
 //     console.log(n1+n2)
 // }
 
+function olaMundo(){
+    alert("Olá Mundo")
+}
+
+function mostraNome(){
+    let nameuser = prompt("Digite seu nome!")
+    console.log(nameuser)
+}
+
+function concatenaPalavras(){
+    let fstword = prompt("Digite o primeiro numero")
+    let secword = prompt("Digite o segundo numero")
+    let concatenacao = fstword + secword
+    console.log(concatenacao)
+}
+
+function somaNumeros(){
+    let n1 = Number(prompt("Digite a primeira palavra"))
+    let n2 = Number(prompt("Digite a segunda palavra"))
+    let soma = n1 + n2
+    console.log(soma)
+}
+
 function criarObjetos(){
     let name = String(prompt("Digite seu nome"))
     let old = String(prompt("Digite sua idade"))
@@ -13,7 +36,7 @@ function criarObjetos(){
     const object = {
         nome: name,
         idade:old,
-        time_do_oração:team
+        time_do_coração:team
     }
 
     console.log(object)
